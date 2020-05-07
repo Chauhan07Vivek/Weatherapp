@@ -6,16 +6,16 @@ console.log('THis is client side js')
 //     })
 // })
 
-fetch('/weather?address=').then((response) => {
-    response.json().then((data) =>{
-        if (data.error) {
-            console.log(data.error)
-        }else {
-            console.log(data.Location)
-            console.log(data.Forecast)
-        }
-    })
-})
+// fetch('/weather?address=').then((response) => {
+//     response.json().then((data) =>{
+//         if (data.error) {
+//             console.log(data.error)
+//         }else {
+//             console.log(data.Location)
+//             console.log(data.Forecast)
+//         }
+//     })
+// })
 const weatherform = document.querySelector('form')
 const search = document.querySelector('input')
 const msg1 = document.querySelector('#message-1')
@@ -26,7 +26,7 @@ weatherform.addEventListener('submit', (e) =>{
     const location = search.value
     msg1.textContent = 'Loading...'
     msg2.textContent = ''
-    fetch('http://localhost:3000/weather?address='+location).then((response) => {
+    fetch('/weather?address='+location).then((response) => {
     response.json().then((data) =>{
         if (data.error) {
             msg1.textContent = data.error
