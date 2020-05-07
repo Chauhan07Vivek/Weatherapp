@@ -51,8 +51,117 @@
                         <p id="message-2"></p>
                     </div>
                 </div> 
-            </div>       
+            </div> 
+        </div>      
+        <h3>Additional Information</h3>
+        <div class="container">
+            <ul class="nav nav-tabs p-2">
+                <li class="border rounded-top p-2"><a data-toggle="tab" href="#menu1">Current Forecast</a></li>
+                {{!-- <li class="border rounded-top p-2"><a data-toggle="tab" href="#menu2">7 Days Forecast</a></li> --}}
+            </ul>
+
+            <div class="tab-content">
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Current Forecast</h3>
+                    <p>These are the current details about weather in searched region.</p>
+
+                    <div class="container">            
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Terms</th>
+                                <th>Values</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td >Temperature</td>
+                                <td ><p id="temp"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Humidity</td>
+                                <td id="humid"></td>
+                            </tr>
+                            <tr>
+                                <td>Feels Like</td>
+                                <td id="feelslike"></td>
+                            </tr>
+                            <tr>
+                                <td>Pressure</td>
+                                <td id="pressure"></td>
+                            </tr>
+                            <tr>
+                                <td>Dew point</td>
+                                <td id="dewpoint"></td>
+                            </tr>
+                            <tr>
+                                <td>UVI</td>
+                                <td id="uvi"></td>
+                            </tr>
+                            <tr>
+                                <td>Clouds</td>
+                                <td id="cloud"></td>
+                            </tr>
+                            <tr>
+                                <td>WindSpeed</td>
+                                <td id="windspeed"></td>
+                            </tr>
+                            <tr>
+                                <td>Summary</td>
+                                <td id="summary"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {{!-- <div id="menu2" class="tab-pane fade ">
+                    <div class="container">
+                        <ul class="nav nav-tabs p-2">
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day1">Day 1</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day2">Day 2</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day3">Day 3</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day4">Day 4</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day5">Day 5</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day6">Day 6</a></li>
+                            <li class="border rounded-top p-2"><a data-toggle="tab" href="#day7">Day 7</a></li>
+                        </ul>   
+                        <p>These are the current details about weather in searched region.</p>
+                        <div id="day1" class="tab-pane fade">
+                            <div class="container">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Email</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </di    v> 
+                </div>
+            </div> --}}
+            </div>
         </div>
+        
         <div class="mb-3 ml-3 pl-3">
             <p >{{>footer}}</p>
         </div>

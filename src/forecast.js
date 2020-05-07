@@ -10,7 +10,15 @@ const forecast = (lat,long,callback) => {
         }else{
             callback(undefined,{
                 temp: response.body.current.temp,
-                humidity: response.body.current.humidity
+                humidity: response.body.current.humidity,
+                feels_like: response.body.current.feels_like,
+                pressure: response.body.current.pressure,
+                dew_point: response.body.current.dew_point,
+                uvi: response.body.current.uvi,
+                clouds:response.body.current.clouds,
+                wind_speed : response.body.current.wind_speed,
+                summary :  response.body.current.weather[0].description, 
+
             })
         }
     })

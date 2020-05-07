@@ -83,12 +83,18 @@ app.get('/Weather',(req,res)=>{
                 Latitude:data.latitude,
                 Longitude:data.longitude,
                 Temperature: dat.temp+' degrees',
-                Humidty: dat.humidity+'%',
-                Forecast:'It is '+dat.temp+' degrees outside and humidity is '+dat.humidity+'%.'
+                Forecast:'It is '+dat.temp+' degrees outside and humidity is '+dat.humidity+'%.',
+                Humidity: dat.humidity,
+                feels_like:dat.feels_like,
+                pressure : dat.pressure,
+                dew_point : dat.dew_point,
+                uvi : dat.uvi,
+                clouds : dat.clouds,
+                wind_speed : dat.wind_speed,
+                summary : dat.summary
             })
 
         })
-
 
     })
     console.log('Weather page is visited')
